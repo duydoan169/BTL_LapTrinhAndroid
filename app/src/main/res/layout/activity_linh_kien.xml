@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linh Kiện"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/edtMaLinhKien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã linh kiện"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtTenLinhKien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên linh kiện"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtSoLuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số lượng tồn"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtGiaNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Giá nhập (VNĐ)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại linh kiện:"
+                android:textColor="#757575"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:backgroundTint="#1565C0"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách linh kiện"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:paddingStart="16dp"
+        android:paddingBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/listViewLinhKien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

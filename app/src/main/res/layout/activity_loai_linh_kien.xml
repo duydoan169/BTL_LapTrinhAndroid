@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại Linh Kiện"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/edtMaLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã loại"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/edtTenLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên loại (VD: Điện trở, IC, Cảm biến)"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:backgroundTint="#1565C0"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách loại linh kiện"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:paddingStart="16dp"
+        android:paddingBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/listViewLoai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
